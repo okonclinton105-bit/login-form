@@ -1,0 +1,187 @@
+/* Base Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* Dark gradient background matching the image */
+    background: linear-gradient(135deg, #1e1136 0%, #112d3b 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+/* Centering the login card */
+.main-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card Styling */
+.login-card {
+    background-color: #2b2e4a;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 420px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Header Gradient */
+.card-header {
+    background: linear-gradient(to right, #9d22b8, #1ba2a6);
+    text-align: center;
+    padding: 35px 20px 25px;
+}
+
+/* Adjusted Image Tag Styling */
+.uni-logo {
+    width: 80px;
+    height: 80px;
+    background-color: #fff; /* Fallback if src is empty */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-header h2 {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.card-header p {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 11px;
+    color: #9ba1ba;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 15px;
+    background-color: #3b3d5c;
+    border: 1px solid #484b6e;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: #727694;
+}
+
+.form-group input:focus {
+    border-color: #1ba2a6;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.btn-secondary {
+    flex: 1;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #484b6e;
+    border-radius: 6px;
+    color: #9ba1ba;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #484b6e;
+    color: white;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(to right, #9d22b8, #1ba2a6);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    transition: opacity 0.3s ease;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* Footer Links inside Card */
+.card-footer-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 20px;
+}
+
+.card-footer-links a {
+    text-decoration: none;
+}
+
+.text-cyan {
+    color: #1ba2a6;
+}
+
+.text-gray {
+    color: #9ba1ba;
+}
+
+/* Overall Page Footer */
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    font-size: 12px;
+    color: #727694;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    .page-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+}
